@@ -11,6 +11,7 @@
     <h1 align="center"><u>Please fill all the details & then click "SUBMIT" button</u></h1>
        
     <form action="/predict" method="POST">
+        <h1 align="center">{{ output }}</h1>
         <h3 align="center"><label for="Total_Stops">Mention Number stops between your route:</label></h3>
         <h4 align="center"><select id="myTextBox1" name="Total_Stops">
             <option value="" disabled selected>Select Number stops</option>
@@ -30,7 +31,7 @@
         <h3 align="center"><label for = 'Duration_mins'>Enter How many minutes do you Journey?</label></h3><h4 align="center"><input step="1" min="0" max="60" type = 'number' id = 'myTextBox1' name = 'Duration_mins' style="height: 15px ; width: 300px;" placeholder="Enter Journey Duration in Minutes"></h4>
         </select></h4>
         <h4 align="center"><button>SUBMIT</button></h4>
-        <h1 align="center">{{ output }}</h1>
+        
     </form>
    
     
