@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Fare Prediction</title>
+</head>
+<body bgcolor="Gainsboro">
+    <h1 align="center"><u>Prediction of Flight Fares between different routes</u></h1>
+    <h1 align="center"><u>Please fill all the details & then click "SUBMIT" button</u></h1>
+       
+    <form action="/predict" method="POST">
+        <h3 align="center"><label for="Total_Stops">Mention Number stops between your route:</label></h3>
+        <h4 align="center"><select id="myTextBox1" name="Total_Stops">
+            <option value="" disabled selected>Select Number stops</option>
+            <option value="0">1 stop</option>
+            <option value="1">2 stops</option>
+            <option value="2">3 stops</option>
+            <option value="3">4 stops</option>
+            <option value="4">non-stop</option>
+        </select></h4>
+        <h3 align="center"><label for = 'Journey_day'>Enter Date of Journey:</label></h3><h4 align="center"><input step="1" min="1" max="31" type = 'number' id = 'myTextBox1' name = 'Journey_day' style="height: 15px ; width: 300px;" placeholder="Enter Date"></h4>
+        <h3 align="center"><label for = 'Journey_month'>Enter Month of Journey:</label></h3><h4 align="center"><input step="1" min="1" max="12" type = 'number' id = 'myTextBox1' name = 'Journey_month' style="height: 15px ; width: 300px;" placeholder="Enter Month"></h4>
+        <h3 align="center"><label for = 'Dep_hour'>Enter Departure Hour of Journey:</label></h3><h4 align="center"><input step="1" min="0" max="24" type = 'number' id = 'myTextBox1' name = 'Dep_hour' style="height: 15px ; width: 300px;" placeholder="Enter Departure Hour"></h4>
+        <h3 align="center"><label for = 'Dep_min'>Enter Departure Month of Journey:</label></h3><h4 align="center"><input step="1" min="0" max="60" type = 'number' id = 'myTextBox1' name = 'Dep_min' style="height: 15px ; width: 300px;" placeholder="Enter Departure Minute"></h4>
+        <h3 align="center"><label for = 'Arrival_hour'>Enter Arrival Hour of Journey:</label></h3><h4 align="center"><input step="1" min="0" max="24" type = 'number' id = 'myTextBox1' name = 'Arrival_hour' style="height: 15px ; width: 300px;" placeholder="Enter Arrival Hour"></h4>
+        <h3 align="center"><label for = 'Arrival_min'>Enter Arrival Minute of Journey:</label></h3><h4 align="center"><input step="1" min="0" max="60" type = 'number' id = 'myTextBox1' name = 'Arrival_min' style="height: 15px ; width: 300px;" placeholder="Enter Arrival Minute"></h4>
+        <h3 align="center"><label for = 'Duration_hour'>Enter How many hours do you Journey?</label></h3><h4 align="center"><input step="1" min="0" max="120" type = 'number' id = 'myTextBox1' name = 'Duration_hour' style="height: 15px ; width: 300px;" placeholder="Enter Journey Duration in Hours"></h4>
+        <h3 align="center"><label for = 'Duration_mins'>Enter How many minutes do you Journey?</label></h3><h4 align="center"><input step="1" min="0" max="60" type = 'number' id = 'myTextBox1' name = 'Duration_mins' style="height: 15px ; width: 300px;" placeholder="Enter Journey Duration in Minutes"></h4>
+        </select></h4>
+        <h4 align="center"><button>SUBMIT</button></h4>
+        <h1 align="center">{{ output }}</h1>
+    </form>
+   
+    
+    
+    
+</body>
+</html>
